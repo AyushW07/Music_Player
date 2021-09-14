@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/prevbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playbtn"
+        app:layout_constraintEnd_toStartOf="@+id/playbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playbtn"
+        app:srcCompat="@drawable/previousbtn" />
+
+    <ImageView
+        android:id="@+id/nextbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playbtn"
+        app:layout_constraintTop_toTopOf="@+id/playbtn"
+        app:srcCompat="@drawable/nextbtn" />
+
+    <ImageView
+        android:id="@+id/playbtn"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextbtn"
+        app:layout_constraintStart_toEndOf="@+id/prevbtn"
+        app:srcCompat="@drawable/play" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:progressTint="#3C1CCB"
+        android:thumb="@drawable/ddisc"
+        app:layout_constraintBottom_toTopOf="@+id/playbtn"
+        app:layout_constraintEnd_toEndOf="@+id/nextbtn"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/prevbtn" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="313dp"
+        android:layout_height="281dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225"
+        app:srcCompat="@drawable/music" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
